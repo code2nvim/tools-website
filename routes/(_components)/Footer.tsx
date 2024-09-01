@@ -1,4 +1,4 @@
-export default function Footer() {
+export function Footer() {
   return (
     <footer class="py-1 flex justify-center items-center text-green-300 bg-green-700">
       <a
