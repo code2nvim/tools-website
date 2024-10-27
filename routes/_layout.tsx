@@ -7,9 +7,7 @@ export default function Layout({ Component }: PageProps) {
     <>
       <div class="absolute h-full w-full grid grid-rows-[auto_1fr_auto] bg-black">
         <Header />
-        <main class="bg-green-300">
-          <Component />
-        </main>
+        <Component />
         <Footer />
       </div>
     </>
