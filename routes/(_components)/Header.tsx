@@ -1,9 +1,16 @@
+import { type Signal } from "@preact/signals";
+import Menu from "../(_islands)/Menu.tsx";
 import { Button } from "./Button.tsx";
 
-export function Header() {
+interface HeaderProps {
+  menu: Signal<boolean>;
+}
+
+export function Header({ menu }: HeaderProps) {
   return (
     <>
       <header class="py-1 flex justify-between items-center bg-green-700">
+        <Menu menu={menu}/>
         <a href="/" class="m-0">
           <Button>HOME</Button>
         </a>

@@ -10,6 +10,8 @@ import * as $greet_name_ from "./routes/greet/[name].tsx";
 import * as $index from "./routes/index.tsx";
 import * as $notes from "./routes/notes.tsx";
 import * as $Counter from "./islands/Counter.tsx";
+import * as $_islands_Menu from "./routes/(_islands)/Menu.tsx";
+import * as $_islands_MenuBar from "./routes/(_islands)/MenuBar.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -24,6 +26,8 @@ const manifest = {
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
+    "./routes/(_islands)/Menu.tsx": $_islands_Menu,
+    "./routes/(_islands)/MenuBar.tsx": $_islands_MenuBar,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
