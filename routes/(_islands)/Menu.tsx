@@ -9,8 +9,7 @@ export default function Menu({ menu }: MenuProps) {
   return (
     <>
       <Button onClick={() => menu.value = menu.value ? false : true}>
-        MENU
-        {/* "≡" */}
+        ≡
       </Button>
     </>
   );
