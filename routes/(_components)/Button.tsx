@@ -4,7 +4,7 @@ export function Button(props: JSX.HTMLAttributes<HTMLButtonElement>) {
   return (
     <button
       {...props}
-      class="mx-1 px-2 border-2 border-white rounded bg-yellow-200"
+      class="m-1.5 p-1 border-2 border-gray-300 rounded bg-white"
     />
   );
 }

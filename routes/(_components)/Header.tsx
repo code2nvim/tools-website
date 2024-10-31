@@ -10,16 +10,14 @@ export function Header({ children }: HeaderProps) {
     <>
       <header class="py-1 flex justify-between items-center bg-green-700">
         {children}
-        <a href="/" class="m-0">
+        <a href="/">
           <Button>HOME</Button>
         </a>
-        <a href="https://fresh.deno.dev">
-          <img
-            width="197"
-            height="37"
-            src="https://fresh.deno.dev/fresh-badge.svg"
-            alt="Made with Fresh"
-          />
+        <a
+          aria-label="Browse the code on GitHub"
+          href="https://github.com/code2nvim/tools-website.git"
+        >
+          <Button>GitHub</Button>
         </a>
       </header>
     </>
