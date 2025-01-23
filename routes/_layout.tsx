@@ -2,7 +2,7 @@ import { useSignal } from "@preact/signals";
 import { type PageProps } from "$fresh/server.ts";
 import { Footer } from "./(_components)/Footer.tsx";
 import { Header } from "./(_components)/Header.tsx";
-import Menu from "./(_islands)/Menu.tsx";
+import MenuButton from "./(_islands)/MenuButton.tsx";
 import MenuBar from "./(_islands)/MenuBar.tsx";
 
 export default function Layout({ Component }: PageProps) {
@@ -14,7 +14,7 @@ export default function Layout({ Component }: PageProps) {
         <MenuBar menu={menu} />
         <div class="h-full w-full grid grid-rows-[auto_1fr_auto]">
           <Header>
-            <Menu menu={menu} />
+            <MenuButton menu={menu} />
           </Header>
           <Component />
           <Footer />

@@ -5,7 +5,7 @@ interface MenuProps {
   menu: Signal<boolean>;
 }
 
-export default function Menu({ menu }: MenuProps) {
+export default function MenuButton({ menu }: MenuProps) {
   return (
     <>
       <Button
