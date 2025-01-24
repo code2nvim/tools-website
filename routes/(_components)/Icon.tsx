@@ -5,9 +5,9 @@ export function Icon(props: JSX.HTMLAttributes<HTMLImageElement>) {
     <img
       {...props}
       draggable={false}
-      width="20"
-      height="20"
-      class="m-1.5 invert filter"
+      width="24"
+      height="24"
+      class="mx-2 my-1 invert filter"
     />
   );
 }
