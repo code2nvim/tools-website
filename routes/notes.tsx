@@ -1,7 +1,3 @@
 export default function Notes() {
-  return (
-    <>
-      Notes
-    </>
-  );
+  return <>Notes</>;
 }

@@ -1,21 +1,15 @@
-import { useSignal } from "@preact/signals";
 import { type PageProps } from "$fresh/server.ts";
 import { Footer } from "./(_components)/Footer.tsx";
 import { Header } from "./(_components)/Header.tsx";
-import MenuButton from "./(_islands)/MenuButton.tsx";
-import MenuBar from "./(_islands)/MenuBar.tsx";
+import { MenuBar } from "./(_islands)/Menu.tsx";
 
 export default function Layout({ Component }: PageProps) {
-  const menu = useSignal(false);
-
   return (
     <>
       <div class="absolute h-full w-full flex bg-black">
-        <MenuBar menu={menu} />
+        <MenuBar />
         <div class="h-full w-full grid grid-rows-[auto_1fr_auto]">
-          <Header>
-            <MenuButton menu={menu} />
-          </Header>
+          <Header />
           <Component />
           <Footer />
         </div>
