@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <main class="bg-green-300">
-      <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
+      <div class="mx-auto flex max-w-screen-md flex-col items-center justify-center">
         <img
           class="my-6"
           src="/logo.svg"

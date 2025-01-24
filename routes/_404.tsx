@@ -6,7 +6,7 @@ export default function Error404() {
       <Head>
         <title>404 - Page not found</title>
       </Head>
-      <div class="size-full mx-auto flex flex-col items-center bg-green-300">
+      <div class="mx-auto flex size-full flex-col items-center bg-green-300">
         <img
           class="my-6"
           src="/logo.svg"

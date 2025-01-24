@@ -6,9 +6,9 @@ import { MenuBar } from "./(_islands)/Menu.tsx";
 export default function Layout({ Component }: PageProps) {
   return (
     <>
-      <div class="absolute h-full w-full flex bg-black">
+      <div class="absolute flex h-full w-full bg-black">
         <MenuBar />
-        <div class="h-full w-full grid grid-rows-[auto_1fr_auto]">
+        <div class="grid h-full w-full grid-rows-[auto_1fr_auto]">
           <Header />
           <Component />
           <Footer />
