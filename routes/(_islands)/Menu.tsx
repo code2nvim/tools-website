@@ -1,5 +1,6 @@
-import { signal } from "@preact/signals";
 import { Fragment } from "preact";
+import { signal } from "@preact/signals";
+import { Icon } from "../(_components)/Icon.tsx";
 
 const show = signal<boolean>(false);
 
@@ -15,14 +16,10 @@ export function MenuBar() {
 
 export function MenuIcon() {
   return (
-    <img
+    <Icon
       onClick={() => (show.value = show.value ? false : true)}
-      draggable={false}
       src="/menu.svg"
-      width="24"
-      height="24"
       alt="menu icon"
-      class="m-2 invert filter"
     />
   );
 }
