@@ -4,7 +4,7 @@ import { Icon } from "./Icon.tsx";
 export function Header() {
   return (
     <>
-      <header class="flex items-center justify-between bg-green-700 py-1">
+      <header class="flex items-center justify-between bg-purple-900 py-1">
         <MenuIcon />
         <HomeIcon />
       </header>
