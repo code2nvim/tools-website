@@ -5,7 +5,7 @@ export default function Home() {
   const count = useSignal(3);
 
   return (
-    <main class="bg-pink-300">
+    <main class="bg-fuchsia-300">
       <div class="mx-auto flex max-w-screen-md flex-col items-center justify-center">
         <img
           class="my-6"
