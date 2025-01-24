@@ -1,11 +1,10 @@
 import { signal } from "@preact/signals";
 import { Fragment } from "preact";
-import { Button } from "../(_components)/Button.tsx";
 
-const showMenu = signal<boolean>(false);
+const show = signal<boolean>(false);
 
 export function MenuBar() {
-  return showMenu.value
+  return show.value
     ? (
       <nav class="text-white">
         <Menu />
@@ -14,13 +13,17 @@ export function MenuBar() {
     : <Fragment />;
 }
 
-export function MenuButton() {
+export function MenuIcon() {
   return (
-    <>
-      <Button onClick={() => (showMenu.value = showMenu.value ? false : true)}>
-        MENU
-      </Button>
-    </>
+    <img
+      onClick={() => (show.value = show.value ? false : true)}
+      draggable={false}
+      src="/menu.svg"
+      width="24"
+      height="24"
+      alt="menu icon"
+      class="m-2 invert filter"
+    />
   );
 }
 
